@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.mapper.TravelMapper">
+	<select id="getContactList" parameterType="hashmap"
+		resultType="com.example.demo.model.Question">
+		SELECT
+		*
+		FROM
+		t1_question q
+		inner join t1_account a on q.m_id = a.m_id
+		where q.m_id = #{mId}
+		<if test='sort == 1'>
+		</if>
+		<if test='sort == 2'>
+			and q.a_content is not null
+		</if>
+		<if test='sort == 3'>
+			and q.a_content is null
+		</if>
+		ORDER BY q_no DESC
+		LIMIT #{startNum}, #{lastNum}
+	</select>
+
+
+	<select id="getContactListCnt" resultType="int">
+		SELECT
+		COUNT(*) AS CNT
+		FROM
+		t1_question
+		where m_id = #{mId}
+	</select>
+
+	<select id="getadminContactListCnt" resultType="int">
+		SELECT
+		COUNT(*) AS
+		CNT
+		FROM
+		t1_question
+	</select>
+
+
+
+
+	<delete id="delContact" parameterType="hashmap">
+		DELETE FROM
+		t1_question
+		WHERE
+		q_no = #{qNo} and m_id = #{mId}
+	</delete>
+
+	<insert id="creatContact" parameterType="hashmap">
+		INSERT INTO t1_question
+		(q_title,q_content,m_id)
+		VALUES
+		(#{qTitle}, #{qContent},#{mId})
+	</insert>
+
+	<select id="selectContact" parameterType="hashmap"
+		resultType="com.example.demo.model.Question">
+		SELECT
+		*
+		FROM
+		t1_question
+		where q_no = #{qNo}
+	</select>
+
+	<update id="editqContact" parameterType="hashmap">
+		UPDATE t1_question SET
+		q_title = #{qTitle}, q_content = #{qContent} WHERE
+		q_no = #{qNo}
+	</update>
+
+	<select id="getAdminContactList" parameterType="hashmap"
+		resultType="com.example.demo.model.Question">
+		SELECT
+		*
+		FROM
+		t1_question
+		<if test='sort == 1'>
+		</if>
+		<if test='sort == 2'>
+			where a_content is not null
+		</if>
+		<if test='sort == 3'>
+			where a_content is null
+		</if>
+		ORDER BY q_no DESC
+		LIMIT #{startNum}, #{lastNum}
+
+	</select>
+
+	<update id="adminCommentContact" parameterType="hashmap">
+		update t1_question
+		SET
+		a_content = #{content}, a_createDate = now()	<!-- 답변작성시간을 
+			현재시각으로 가져오도록 한다 -->
+		WHERE
+		q_no = #{qNo}		<!-- qno가 아니라 id로 하면, 그 id가 쓴 모든 문의글에 같은 답변이 동시에 달려버린다 -->
+	</update>
+	
+	<delete id="admindelContact" parameterType="hashmap">
+		DELETE FROM
+		t1_question
+		WHERE
+		q_no = #{qNo}
+	</delete>
+	
+	
+	
+
+</mapper>

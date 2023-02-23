@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.mapper.TravelMapper">	
+	<insert id="addBucketList" parameterType="hashmap">
+		INSERT INTO t1_bucket
+			(m_id, b_name, b_add, b_jibun, b_tel) 
+		VALUES
+			(
+			#{m_id}
+			,#{b_name}
+			,#{b_add}
+			,#{b_jibun}
+			,#{b_tel}
+			)
+			
+			<!-- {m_id=id, b_name=서울역, b_add=서울 용산구 한강대로 405, b_jibun=서울 용산구 동자동 43-205, b_tel=1544-7788} -->
+	</insert>
+	
+	<select id="checkBucketList" parameterType="hashmap"
+		resultType="int">
+		SELECT COUNT(*) 
+		FROM t1_bucket 
+		WHERE m_id = #{m_id} AND b_name = #{b_name} AND b_add = #{b_add}
+		<!--select count(*) from t1_bucket where m_id = '' and b_name = '서울역' and b_add = '서울 용산구 한강대로 405' -->
+	</select>
+	
+	<select id="getBucketList" parameterType="hashmap"
+		resultType="com.example.demo.model.Bucket">
+		select * 
+		from t1_bucket
+		where m_id = #{m_id}
+	</select>
+	
+	<delete id="removeBucketList" parameterType="hashmap">
+		DELETE FROM
+		t1_bucket
+		WHERE
+		m_id = #{m_id} AND b_name = #{b_name} AND b_add = #{b_add}
+	</delete>
+	
+</mapper>

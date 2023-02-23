@@ -1,0 +1,152 @@
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+ 
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.findContainer {
+	margin: 40px auto;
+	padding: 50px;
+	position: relative;
+	width: auto;
+	height: auto;
+	letter-spacing: -.2px;
+}
+
+#findField_ID, #modifyPwField {
+	margin: 0 auto;
+    padding: 30px;
+    width: 400px;
+    height: 350px;
+    position: relative;
+    bottom: 30px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    border : 2px solid #a1a1a1;
+}
+
+#findField_PW {
+	margin: 0 auto;
+    padding: 30px;
+    width: 400px;
+    height: 450px;
+    position: relative;
+    bottom: 30px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    border : 2px solid #a1a1a1;
+}
+
+.radioBtn {
+	margin: 20px auto;
+	position: relative;
+	float: left;
+    width: 400px;
+    height: auto;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#idBtn {
+	margin: 0 50px;
+	position: relative;
+	float: left;
+    width: 100px;
+    height: auto;
+    text-align: center;
+}
+
+#pwBtn{
+	margin: 0 40px;
+	position: relative;
+	float: left;
+    width: 100px;
+    height: auto;
+    text-align: center;
+}
+
+.findInfo {
+	margin: 0;
+	width: auto;
+	height: auto;
+}
+
+#btnFont {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.nickName_area, .newPw_area, .newRePw_area {
+	padding-top: 50px;
+	height: 75px;
+}
+.nickName_area {
+	margin: 30px auto;
+}
+.newPw_area, .newRePw_area {
+	margin: 0 auto;
+}
+
+#nickName, .newPw {
+	margin: 0 20px;
+    position: relative;
+    text-align: left;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#id {
+	margin: 0 20px;
+    position: relative;
+    text-align: left;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#email, .newRePw {
+	margin: 0 20px;
+    position: relative;
+    text-align: left;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#inputInfo {
+	width: 340px;
+}
+
+#findIdPw_btn, #modifyPw_btn {
+	position: relative;
+	margin: 40px auto;
+	width: 100px;
+	height: 30px;
+    background-color: rgb(112, 172, 253);
+    border-radius: 20px;
+}
+
+#findIdPw_btn {
+	bottom: 20px;
+}
+#modifyPw_btn {
+	top: 20px;
+}
+
+#findIdPw_btn:hover, .modifyPw_btn:hover {
+	background-color: rgb(27 119 243);
+}
+
+.findBtn, .modifyBtn {
+	margin: 0 auto;
+	padding-top: 7px;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+label > a {
+	color: black;
+}

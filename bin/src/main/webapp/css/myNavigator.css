@@ -1,0 +1,79 @@
+.nav_member, .nav_admin {
+	margin: 0 auto;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	position: relative;
+	float: left;
+	width: 180px;
+	height: auto;
+	border-radius: 20px;
+}
+
+.nav_member {
+	border: 2px solid #c4c4c4;
+}
+
+.nav_admin {
+	border: 2px solid rgb(233, 189, 251);
+}
+
+.nav::after, .nav_admin::after{
+	clear: left;
+	display: block;
+	content: "";	
+}
+
+.nav_Area {
+	margin: auto;
+	position: relative;
+	float: left;
+	left: 20px;
+	width: auto;
+	height: auto;
+	border-bottom: 1px solid #c4c4c4;
+}
+
+.nav_plannerArea {
+	margin: auto;
+	position: relative;
+	float: left;
+	left: 20px;
+	width: auto;
+	height: auto;
+}
+
+
+.nav_font {
+	font-size: 15px;
+	text-align: left;
+}
+
+#nav_item {
+	margin: auto;
+	padding: 10px;
+	position: relative;
+	float: left;
+	right: 10px;
+	bottom: 10px;
+	width: 120px;
+}
+
+#link_deco {
+	margin: 0 auto;
+	padding: 10px;
+	width: 120px;
+	height: auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+#link_deco > a {
+	color: #777676;
+	
+}
+
+#link_deco > a:hover {
+	color: black;
+}

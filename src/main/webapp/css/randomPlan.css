@@ -1,0 +1,113 @@
+.randomPlan_font {
+	margin: 20px auto;
+	width: auto;
+	height: auto;
+}
+
+.move_eiPage, .selectLoca{
+	margin: 30px auto;
+	width: 500px;
+	height: auto;
+	text-align: center;
+}
+
+@keyframes slotmachine {
+	0%{ 
+        margin-top: 0;
+    }
+	10%{ 
+        margin-top: -115px;
+    }
+    20%{
+        margin-top: -230px;
+    }
+	30%{ 
+        margin-top: -345px;
+    }
+    40%{ 
+        margin-top: -460px;
+    }
+    50%{
+        margin-top: -575px;
+    }
+    60%{ 
+        margin-top: -690px;
+    }
+    70%{
+        margin-top: -805px;
+    }
+	80%{ 
+        margin-top: -920px;
+    }
+    90%{ 
+        margin-top: -1035px;
+    }
+    100%{
+        margin-top: -1200px;
+    }
+}
+
+.notice_cursor {
+	margin: 5px auto;
+	width: 500px;
+	height: auto;
+	color: gray;
+	text-align: center;
+}
+
+.slot_loca {
+	margin: 0px auto;
+	overflow: hidden;
+	width: 500px;
+	height: 160px;
+	border: 2px solid black;
+	cursor: pointer;
+}
+
+.slot {
+	margin: 0 auto;
+	padding: 0;
+	width: 200px;
+	height: 160px;
+	animation: slotmachine 0.5s infinite;
+	animation-timing-function: ease-in-out;
+/* 	animation-iteration-count: 0; */
+/* 	animation-duration: 100000ms; */
+	animation-play-state: paused;
+	}
+
+.slot:hover {
+	/* animation-play-state: paused; */
+	animation-play-state: running;
+}
+
+.slot li{
+	margin-top: 30px;
+	padding-top: 30px;
+	width: 200px;
+	height: 100px;
+	text-align: center;
+	justify-content: center;
+	font-size: 96px;
+	font-weight: bold;
+}
+
+.input_loca {
+	margin-top: 20px;
+	width: 150px;
+	text-align: center;
+}
+
+.moveEI_btn{
+	margin: 10px auto;
+	padding-top: 12px;
+	width: 150px;
+	height: 30px;
+	background-color: rgb(52, 152, 219);
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+

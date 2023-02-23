@@ -1,0 +1,548 @@
+#mainField.createplanField {
+	margin-left: 350px;
+	padding: 30px 50px;
+	width: 1100px;
+	background-color: white;
+	border-radius: 10px;
+	border: 2px solid rgb(41, 128, 185);
+}
+
+.createplan_date {
+	margin: 0 auto;
+	width: auto;
+	height: 100px;
+	border-bottom: 2px solid #e3e3e3;
+}
+
+.createplan_date::after {
+	clear: left;
+	display: block;
+	content: "";
+}
+
+.createplan_plan::after {
+	clear: left;
+	display: block;
+	content: "";
+}
+
+.createplan_content {
+	margin: 0 7px;
+	margin-top: 50px;
+	padding-top: 30px;
+	padding-bottom: 40px;
+	width: auto;
+	height: auto;
+	background-color: rgb(237, 248, 255);
+	border-radius: 10px;
+}
+
+.createplan_content::after {
+	clear: left;
+	display: block;
+	content: "";
+}
+
+.createplan_tab {
+	position: relative;
+	float: left;
+	left: 7px;
+	bottom: 40px;
+	width: auto;
+	margin: auto;
+	padding: 0;
+}
+
+.createplan_tab::after {
+	clear: left;
+	display: block;
+	content: "";
+}
+
+.tab_menu, .tab_menu_sub {
+	position: relative;
+	float: left;
+	margin: 0 2px;
+	padding: 0 20px;
+	padding-top: 10px;
+	width: auto;
+	height: 30px;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.tab_menu {
+	font-weight: bold;
+	color: rgb(94, 94, 94);
+	background-color: rgb(237, 248, 255);
+	border-radius: 3px;
+}
+
+.tab_menu_sub {
+	color: white;
+	background-color: rgb(190, 190, 190);
+	border-radius: 1px;
+}
+
+.spotName_date {
+	margin: 0 auto;
+	margin-bottom: 30px;
+	width: 500px;
+	height: auto;
+}
+
+.spotName, .spotDate {
+	margin: 15px auto;
+	display: block;
+	font-weight: bold;
+	font-size: 18px;
+	text-align: center;
+}
+
+.spotName {
+	background-color: rgb(237 248 255);
+	border: none;
+}
+
+.createplan_area {
+	margin-left: 30px;
+	/* padding-right: 715px; */
+	width: 1015px;
+	height: auto;
+	border: 1px solid rgb(41, 128, 185);
+	border-radius: 5px;
+}
+
+.createplan_area::after {
+	clear: left;
+	display: block;
+	content: "";
+}
+
+.bucket_save_btn {
+	margin: 0 auto;
+	width: auto;
+	height: auto;
+}
+
+.bucket_save_btn::after {
+	clear: left;
+	display: block;
+	content: "";
+}
+
+.bucketBtn, .saveBtn {
+	position: relative;
+	float: left;
+	margin: 10px auto;
+	padding-top: 10px;
+	width: 120px;
+	height: 30px;
+	border-radius: 10px;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+.bucketBtn {
+	margin-left: 230px;
+	background-color: rgb(8, 110, 179);
+}
+.saveBtn {
+	margin-left: 580px;
+	background-color: rgb(52, 152, 219);
+}
+
+.start_date {
+	position: relative;
+	float: left;
+	margin: 0 auto;
+	margin-left: 240px;
+	width: auto;
+	height: auto;
+}
+
+.dateFont, .selectDate {
+	margin: 10px auto;
+	width: auto;
+	display: block;
+	text-align: center;	
+}
+
+.dateFont {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.selectDate {
+	font-size: 15px;
+	color: rgb(78 78 78);
+	border-radius: 5px;
+	border: 1px solid rgb(204, 204, 204);
+}
+
+.seperate_date {
+	position: relative;
+	float: left;
+	top: 25px;
+	margin: 0 50px;
+	width: auto;
+	height: auto;
+}
+
+.arrive_date {
+	position: relative;
+	float: left;
+	margin: 0 auto;
+	width: auto;
+	height: auto;
+}
+
+.switch {
+	position: relative;
+	float: left;
+	left: 100px;
+	bottom: 10px;
+	margin: 5px;
+}
+
+.toggleSwitch {
+  width: 80px;
+  height: 30px;
+  display: block;
+  position: relative;
+  border-radius: 30px;
+  background-color: #fff;
+  box-shadow: 0 0 16px 3px rgba(0 0 0 / 7%);
+  cursor: pointer;
+  margin: 5px;
+}
+
+.toggleSwitch .toggleButton {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: #dddddd;
+}
+
+#toggle:checked ~ .toggleSwitch {
+  background: #89d1ff;
+}
+
+#toggle:checked ~ .toggleSwitch .toggleButton {
+  left: calc(100% - 30px);
+  background: #fff;
+}
+
+.toggleSwitch, .toggleButton {
+  transition: all 0.2s ease-in;
+}
+
+.createPlanner_btn {
+	position: relative;
+	float: left;
+	top: 50px;
+	margin: 0 auto;
+	padding-top: 5px;
+	width: 100px;
+	height: 20px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 15px;
+	color: white;
+	background-color: rgb(94 184 245);
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.test {
+	position: relative;
+	float: left;
+	padding: 5px 0;
+	width: 310px;
+	height: auto;
+}
+.planBox {
+	position: relative;
+	float: left;
+	padding: 5px 0;
+	width: 320px;
+	height: auto;
+	text-align: center;
+	border-bottom: 1px solid #a1a4a6;
+	border-right: 1px solid #a1a4a6;
+}
+
+.planBox::after {
+	clear: left;
+	display: block;
+	content: "";
+}
+
+[type="radio"], .addItem_btn {
+	vertical-align: middle;
+  	appearance: none;
+  	width: 15px;
+  	height: 15px;
+  	background-color: rgb(224, 224, 224);
+  	border-radius: 2px;
+  	cursor: pointer;
+}
+
+.delItem_raBtn, .addItem_btn {
+	position: relative;
+	float: left;
+}
+
+.delItem_raBtn:hover [type="radio"]:after{
+	content: "-";
+	position: relative;
+	bottom: 7px;
+	left: 4px;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+}
+
+.addItem_btn {
+	left: 5px;
+	margin: 10px 0 ;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+}
+
+.time::after {
+	clear: left;
+	display: block;
+	content: "";
+}
+
+.time, .inputPlan {
+	width: auto;
+	height: auto;
+}
+.time {
+	margin: 5px auto;
+	padding: 0 40px;	
+}
+
+.inputPlan {
+	margin: 10px auto;	
+}
+
+.time_hour, .time_minute {
+	position: relative;
+	float: left;
+	margin: 0 20px;
+	width: 70px;
+	text-align: center;
+}
+
+.seperate_time {
+	display: block;
+	position: relative;
+	float: left;
+	margin: 0;
+	padding-top: 3px;
+	width: 20px;
+	font-size: 15px;
+	font-weight: bold;
+	
+}
+
+.inputPlan > input {
+	margin: 0 10px;
+	width: 260px;
+}
+
+.createPlan_map {
+	position: relative;
+	left: 341px;
+	top: 293px;
+	margin: 0 auto;
+	margin-left: 50px;
+	width: 0;
+	height: 0;
+}
+
+.noneArea_test {
+	position: relative;
+	float: left;
+	margin: 5px 0 5px 20px;
+	width: 650px;
+	height: 410px;
+}
+
+.ui-widget-header {
+border: 0px solid #dddddd;
+background: #fff;
+}
+
+.ui-datepicker-calendar>thead>tr>th {
+font-size: 14px !important;
+}
+
+.ui-datepicker .ui-datepicker-header {
+position: relative;
+padding: 10px 0;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+border: 0px solid #c5c5c5;
+background-color: transparent;
+font-weight: normal;
+color: #454545;
+text-align: center;
+}
+
+.ui-datepicker .ui-datepicker-title {
+margin: 0 0em;
+line-height: 16px;
+text-align: center;
+font-size: 14px;
+padding: 0px;
+font-weight: bold;
+}
+
+.ui-datepicker {
+display: none;
+background-color: #fff;
+border-radius: 4px;
+margin-top: 10px;
+margin-left: 0px;
+margin-right: 0px;
+padding: 20px;
+padding-bottom: 10px;
+width: 300px;
+box-shadow: 10px 10px 40px rgba(0,0,0,0.1);
+}
+    
+.ui-widget.ui-widget-content {
+    border: 1px solid #eee;
+}
+
+#datepicker:focus>.ui-datepicker {
+display: block;
+}
+
+.ui-datepicker-prev,
+.ui-datepicker-next {
+cursor: pointer;
+}
+
+.ui-datepicker-next {
+float: right;
+}
+
+.ui-state-disabled {
+cursor: auto;
+color: hsla(0, 0%, 80%, 1);
+}
+
+.ui-datepicker-title {
+text-align: center;
+padding: 10px;
+font-weight: 100;
+font-size: 20px;
+}
+
+.ui-datepicker-calendar {
+width: 100%;
+}
+
+.ui-datepicker-calendar>thead>tr>th {
+padding: 5px;
+font-size: 20px;
+font-weight: 400;
+}
+
+
+.ui-datepicker-calendar>tbody>tr>td>a {
+color: #000;
+font-size: 12px !important;
+font-weight: bold !important;
+text-decoration: none;
+    
+}
+
+
+.ui-datepicker-calendar>tbody>tr>.ui-state-disabled:hover {
+cursor: auto;
+background-color: #fff;
+}
+    
+.ui-datepicker-calendar>tbody>tr>td {
+    border-radius: 100%;
+    width: 44px;
+    height: 30px;
+    cursor: pointer;
+    padding: 5px;
+    font-weight: 100;
+    text-align: center;
+    font-size: 12px;
+}
+    
+.ui-datepicker-calendar>tbody>tr>td:hover {
+    background-color: transparent;
+    opacity: 0.6;
+}
+
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus,
+.ui-button:hover,
+.ui-button:focus {
+border: 0px solid #cccccc;
+background-color: transparent;
+font-weight: normal;
+color: #2b2b2b;
+}
+
+    
+.ui-datepicker-calendar>tbody>tr>td:first-child a{
+color: red !important;
+}
+    
+.ui-datepicker-calendar>tbody>tr>td:last-child a{
+color: #0099ff !important;
+}
+    
+.ui-datepicker-calendar>thead>tr>th:first-child {
+    color: red !important;
+}
+    
+.ui-datepicker-calendar>thead>tr>th:last-child {
+    color: #0099ff !important;
+}
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+    border: 0px;
+    background: #f1f1f1;
+    border-radius: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.inp {padding:10px 10px; background-color:#f1f1f1; border-radius:4px; border:0px;}
+.inp:focus {outline:none; background-color:#eee;}
+
+/* .font{
+	font-size:20px;
+} */
+
+.input_text{
+	width: 100px;
+	height: 20px;
+	font-size: 15px
+}

@@ -1,0 +1,141 @@
+.recommendSpot, .recommendPost, .movePage {
+	margin: 100px auto;
+	width: 1000px;
+	height: auto;
+}
+
+.movePage::after {
+	clear: left;
+	display: block;
+	content: "";
+}
+
+/* 지도넣을 곳의 CSS 입니다. 임시용이니 편하게 수정하세요. */
+.recommend_map {
+	margin: 20px auto;
+	width: auto;
+	height: 200px;
+	text-align: center;
+	border: 1px solid red;	
+}
+
+.seperate_text, .seperate_arrow, .seperate_versus {
+	margin: 0 auto;
+	font-weight: bold;
+	text-align: center;
+	color: rgb(158, 158, 158);
+}
+
+.seperate_text {
+	width: 100px;
+	height: 50px;
+	font-size: 60px;
+}
+
+.seperate_arrow {
+	width: 120px;
+	height: 120px;
+	background-image: url(/manageimage/arrow.PNG);
+	background-size: cover;
+}
+.seperate_versus {
+	margin: 50px 0;
+	width: auto;
+	height: 50px; 
+	position: relative;
+	float: left;
+	font-size: 40px;
+}
+
+.notice_txt {
+	margin: 20px auto;
+	width: 800px;
+	height: auto;
+	text-align: center;
+}
+.noticeBig {
+	font-size: 30px;
+	font-weight: bold;
+	color: rgb(51, 51, 51);
+}
+.noticeSmall {
+	font-weight: bold;
+	color: rgb(51, 51, 51);
+}
+
+.searchNaver_Btn {
+	margin: 20px auto;
+	width: 550px;
+	height: 56px;
+	border-radius: 10px;
+	background-image: url(/manageimage/searchIcon.png);
+	background-size: cover;
+}
+
+.search_Eposting {
+	margin: 0 auto;
+	padding-top: 17px;
+	padding-left: 30px;
+	width: 580px;
+	height: 56px;
+	border-radius: 10px;
+	font-size: 28px;
+	font-weight: bold;
+	color: white;
+	cursor: pointer;
+}
+
+.movePage_createPlan, .movePage_naverSearch {
+	position: relative;
+	float: left;
+	width: 400px;
+	height: auto;
+}
+
+.movePage_createPlan {
+	margin: 0 40px;
+}
+
+.movePage_naverSearch {
+	margin-left: 40px;
+}
+
+.item_location {
+	margin: 25px auto;
+	width: 300px;
+	height: auto;
+	text-align: center;
+}
+
+.bucket_btn, .movePage_btn, .movePage_btn {
+	cursor: pointer;
+}
+
+.bucket_btn, .planner_btn, .search_btn {
+	margin: 0 auto;
+	padding: 10px;
+	height: auto;
+	border-radius: 20px;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+	text-align: center;
+}
+
+.bucket_btn {
+	width: 110px;
+	background-color: rgb(52, 152, 219);
+	font-size: 15px;
+}
+
+.planner_btn {
+	width: 200px;
+	background-color: rgb(76, 181, 255);
+	font-size: 20px;
+}
+
+.search_btn {
+	width: 100px;
+	background-color: rgb(108, 177, 225);
+	font-size: 20px;
+}

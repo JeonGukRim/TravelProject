@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.mapper.TravelMapper">
+
+	<select id="selectIdList" parameterType="hashmap"
+		resultType="com.example.demo.model.Account">
+		select * from t1_account
+		where m_id = #{mId} and password=
+		#{password}
+	</select>
+
+	<select id="getProimg" parameterType="hashmap" resultType="com.example.demo.model.Account">
+		select * from t1_account
+		where m_id = #{mId}
+	</select>
+
+
+	<select id="getAccount" parameterType="hashmap"
+		resultType="com.example.demo.model.Account">
+		select * from t1_account
+		where m_id = #{mId} and password=
+		#{password}
+	</select>
+
+	<!-- 회원가입 메소드 -->
+	<insert id="addUserid" parameterType="hashmap">
+		INSERT INTO
+			t1_account
+			(m_id, password, m_nickname, m_name
+			, m_birthday, m_birthmm, m_birthdd
+			, m_gender, m_email, status)
+		VALUES
+			(#{m_id}, #{password}, #{m_nickname}, #{m_name}
+			, #{m_birthday}, #{m_birthmm}, #{m_birthdd}
+			, #{m_gender}, #{m_email}, 'm')
+	</insert>
+
+
+	<select id="findUserId" parameterType="hashmap"
+		resultType="String">
+		<![CDATA[
+			SELECT
+				m_id
+			FROM
+				t1_account
+			WHERE
+				m_nickName = #{m_nickName} AND m_email = #{m_email}
+		]]>
+	</select>
+
+	<select id="findUserPw" parameterType="hashmap"
+		resultType="String">
+		<![CDATA[
+			SELECT
+				password
+			FROM
+				t1_account
+			WHERE
+				m_nickName = #{m_nickName} AND (m_id = #{m_id} AND m_email = #{m_email})
+		]]>
+	</select>
+
+	<update id="modifyUserPw" parameterType="hashmap">
+		UPDATE
+		t1_account
+		SET
+		password = #{password}
+		WHERE
+		m_id = #{m_id}
+	</update>
+
+	<!-- 아이디 중복체크 -->
+	<select id="checkUserid" parameterType="hashmap" resultType="String">
+		SELECT
+			m_id
+		FROM
+			t1_account
+		WHERE
+			m_id = #{m_id}
+	</select>
+	
+	<!-- 닉네임 중복체크 -->
+	<select id="checkUserNick" parameterType="hashmap" resultType="com.example.demo.model.Account">
+		SELECT
+			m_nickname
+		FROM
+			t1_account
+		WHERE
+			m_nickname = #{m_nickname}
+	</select>
+	
+	<!-- 이메일 중복체크 -->
+	<select id="checkUserEmail" parameterType="hashmap" resultType="int">
+		SELECT COUNT(*) 	<!-- count니까 int  -->
+		FROM
+			t1_account
+		WHERE
+			m_email = #{m_email}
+	</select>
+
+	<update id="updatePro" parameterType="hashmap">
+		UPDATE
+			t1_account
+		SET 
+			 password = #{changePw}, m_nickname = #{changeNickName}
+			, m_name = #{changeName}, m_birthday = #{changeBirthyear}, m_birthmm = #{changeBirthmonth}
+			, m_birthdd = #{changeBirthday}, m_gender = #{changeGender}, m_email = #{changeEmail} 
+		WHERE
+			m_id =#{mId}
+	</update>
+	
+	<update id="updatePro2" parameterType="hashmap">
+		UPDATE
+			t1_account
+		SET 
+			profile_img = #{profileImg}
+		WHERE
+			m_id =#{mId}
+	</update>
+
+
+</mapper>

@@ -1,0 +1,154 @@
+#modifyPwInputField, .modifyField {
+	margin-left: 150px;
+	padding: 30px 20px 30px 80px;
+	width: auto;
+	height: auto;
+	font-weight: bold;
+	background-color: white;
+}
+
+.modifyField>.selPhoto_area, .id_area, .pw_area, .rePw_area,
+	.nickName_area, .name_area, .birthday_area, .gender_area, .email_area {
+	margin: 5px auto;
+	width: 800px;
+	height: auto;
+}
+
+.selPhoto_area {
+	padding: 10px;
+}
+
+.selPhoto_area::after {
+	clear: left;
+	display: block;
+	content: "";
+}
+
+.photo {
+	margin: 0 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	position: relative;
+	float: left;
+	width: 150px;
+	height: 150px;
+	background-color: #f2f2f2;
+	border: 2px dotted gray;
+	
+}
+
+.selPhoto {
+	margin: 0 20px;
+	padding: 60px 0 40px 0;
+	position: relative;
+	float: left;
+	width: auto;
+	height: auto;
+}
+
+.profile_label {
+	margin-top: 20px;
+	top: 50px;
+	width: 400px;
+	text-align: left;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.selPhotoBtn {
+	margin-top: 20px;
+}
+
+.selBtn {
+	padding: 0 auto;
+	width: 90px;
+	height: auto;
+	text-align: center;
+	color: white;
+	border-radius: 5px;
+	background-color: #cacaca;
+	cursor: pointer;
+}
+
+.selBtn>span {
+	font-weight: normal;
+	font-size: 17px;
+}
+
+.modifyField>.id_area>#id, .userID {
+	position: relative;
+	float: left;
+}
+
+.modifyField>.id_area::after {
+	clear: left;
+	display: block;
+	content: "";
+}
+
+.userID {
+	margin-top: 22px;
+	margin-left: 10;
+	width: 300px;
+	height: auto;
+	font-size: 15px
+}
+
+.userID_deco {
+	font-size: 25px;
+	font-weight: bold;
+	color: gray;
+}
+
+.input_loca {
+	padding-left: 15px;
+	width: 800px;
+	height: auto;
+}
+
+.failSuc_notice {
+	margin-top: 50px;
+	margin-left: 10;
+	width: 300px;
+	height: auto;
+	font-size: 15px
+}
+
+.input_loca::after {
+	clear: left;
+	display: block;
+	content: "";
+}
+
+.birthday_area::after {
+	clear: left;
+	display: block;
+	content: "";
+}
+
+.input_loca>#inputInfo, .failSuc_notice {
+	position: relative;
+	float: left;
+}
+
+.modify_btn {
+	margin: 50px 250px 50px 100px;
+	width: 250px;
+	height: 40px;
+	background-color: rgb(112, 172, 253);
+	border-radius: 20px;
+}
+
+.modify_btn:hover {
+	background-color: rgb(27, 119, 243);
+}
+
+.modifyBtn {
+	margin: 0 auto;
+	padding-top: 10px;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	cursor: pointer;
+}

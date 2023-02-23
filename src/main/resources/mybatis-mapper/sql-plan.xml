@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.mapper.TravelMapper">
+
+	<select id="getMyplanner" parameterType="hashmap"
+		resultType="com.example.demo.model.Plan">
+		select * 
+		from 
+		t1_planner_plan p
+		inner join t1_planner_day d on p.m_id =d.m_id and p.p_creatDate=d.p_creatDate
+		where p.m_id = #{mId} and p.p_creatDate = #{pCreatDate}
+		<if test='index != "" and index != null'>
+			and p_dayCount = #{index} 
+		</if>
+		ORDER BY d.p_creatDate ASC,d.p_dayCount ASC
+		
+	</select>
+	<select id="getDate" parameterType="hashmap"
+		resultType="com.example.demo.model.Plan">
+		select * 
+		from 
+		t1_planner_plan
+		where m_id = #{mId}
+		ORDER BY p_creatDate ASC
+	</select>
+	<!--SELECT
+		*
+		FROM
+		t1_question q
+		inner join t1_account a on q.m_id = a.m_id
+		where q.m_id = #{mId}
+		<if test='sort == 1'>
+		</if>
+		<if test='sort == 2'>
+			and q.a_content is not null
+		</if>
+		<if test='sort == 3'>
+			and q.a_content is null
+		</if>
+		ORDER BY q_no DESC
+		LIMIT #{startNum}, #{lastNum}
+	</select>  -->
+	
+	
+
+	<insert id="addPlan" parameterType="hashmap">
+		insert into t1_planner_day
+		(m_id,p_creatDate,p_dayCount,p_hour,p_min,p_content,p_address)
+		values
+		<foreach collection="list" item="item" index="i" separator=",">
+
+			(#{mId},
+			NOW(),
+			#{diffDate},
+			#{item.hour_combo},
+			#{item.minute_combo},
+			#{item.plan},
+			#{spot_name}
+			)
+		</foreach>
+	</insert>
+
+
+	<insert id="addPlan1" parameterType="hashmap">
+		insert into t1_planner_plan
+		(m_id,planStartdate,planOverdate,p_creatDate,mbti_jp)
+		values
+		(#{mId},#{goDate},#{arriveDate},NOW(),#{selPJ})
+	</insert>
+
+</mapper>
+
+
+<!-- mId : self.userId , goDate: self.goDate, arriveDate: self.arriveDate, 
+	diffDate: self.diffDate , spot_name: self.spot_name, selPJ: self.selPJ, dayList: 
+	self.dayList ,"list":list}; -->
+    			

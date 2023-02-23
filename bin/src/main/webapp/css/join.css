@@ -1,0 +1,169 @@
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+
+#joinHeader > h1 {
+	font-size: 50px;
+    color: rgb(112, 172, 253);
+    cursor: pointer;
+}
+
+#inputInfo {
+	margin: 20px auto;
+    padding: 10px;
+    width: 400px;
+    height : 20px;
+    border-radius: 5px;
+    border : 1.8px solid #c4c4c4;
+}
+
+select {
+	margin: 20px auto;
+    padding: 10px;
+    width: 110px;
+    height : auto;
+    border-radius: 5px;
+    border : 1.8px solid #c4c4c4;
+    font-size: 15px;
+}
+/*  콤보박스가 선택이 안되서 임시로 주석처리함 */
+.birth_combo > form {
+ 	margin: 0 auto;
+ 	position: relative;
+ 	width: auto;
+ 	float: left;
+}
+
+#joinHeader {
+	margin: 0 auto;
+	padding: 20px;
+	position: relative;
+	background-color: #fff;
+	width: auto;
+	height: auto;
+	text-align: Center;
+}
+
+.joinContainer {
+	margin: 0 auto;
+	padding: 50px;
+	position: relative;
+	width: auto;
+	height: auto;
+	letter-spacing: -.2px;
+}
+
+#joinField {
+    margin: 0 auto;
+    padding: 40px;
+    width: 450px;
+    height: auto;
+    position: relative;
+    bottom: 30px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    border : 2px solid #a1a1a1;
+}
+
+.id_area, .pw_area, .rePw_area, .nickName_area,
+	.name_area, .birthday_area, .gender_area {
+	margin-top: 10px;
+	width: auto;
+	height: auto;
+}
+
+.birthday_area::after {
+	clear: left;
+	display: block;
+	content: "";	
+}
+
+.email_area {
+	margin-top: 10px;
+	margin-bottom: 60px;
+	width: auto;
+	height: auto;
+}
+
+#id, #pw, #rePw, #nickName,
+	#name, #birthday, #gender, #email{
+	margin: 0 20px;
+	padding-top: 20px;
+    position: relative;
+    text-align: left;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+.birth_combo {
+	position: relative;
+	float: left;
+	width: auto;
+	height: auto;
+}
+
+.birth_item {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.failSuc_notice {
+	margin: 0 20px;
+	position: relative;
+	bottom: 15px;
+	text-align: left;
+}
+
+.gender_combo {
+	width: auto;
+	height: auto;
+	text-align: left;
+}
+
+select option[value=""][disabled] {
+	display: none;
+}
+
+.genderMF {
+	margin-left: 20px;
+}
+
+.fail {
+	color: red;
+}
+
+.success {
+	color: #64ff00;
+}
+
+.join_btn {
+	margin: 0 auto;
+	position: relative;
+	bottom: 20px;
+	width: 250px;
+	height: 40px;
+    background-color: rgb(112, 172, 253);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.join_btn:hover {
+	background-color: rgb(27 119 243);
+}
+
+#joinBtn {
+	margin: 0 auto;
+	padding-top: 10px;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+}

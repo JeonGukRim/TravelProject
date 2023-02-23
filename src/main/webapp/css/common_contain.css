@@ -1,0 +1,81 @@
+.container {
+	margin: 50px 100px;
+	padding: 100px 50px 180px 50px;
+	width: auto;
+	height: auto;
+	border: 2px solid white;
+	letter-spacing: -.2px;
+}
+#mainField {
+	margin-left: 400px;
+	padding: 30px 60px;
+	/* left: 140px; */
+	width: 1000px;
+	height: auto;
+	border: 2px solid rgb(41, 128, 185);
+}
+
+#mainField.adminField{
+	border-radius: 10px;
+	border: 2px solid rgb(233, 189, 251);
+}
+
+#mainField.mypageField {
+	border-radius: 10px;
+	border: 2px solid rgb(41, 128, 185);
+}
+
+#mainField.bucketField{
+	margin-left: 400px;
+	padding: 30px 60px;
+	/* left: 140px; */
+	width: 800px;
+	height: 600px;
+	border: 2px solid rgb(41, 128, 185);
+}
+
+.container::after{
+	clear: left;
+	display: block;
+	content: "";	
+}
+
+#mainField::after{
+	clear: left;
+	display: block;
+	content: "";	
+}
+
+#smallCategroy {
+	margin: 0 0 20px 400px;
+	padding: 0;
+	width: auto;
+	height: auto;
+}
+
+#smallCategroy > .small_category {
+	margin-right: 10px;
+	font-size: 35px;
+	font-weight: bold;
+	text-align: left;
+	color: #d775ff;
+}
+
+#smallCategroy > .small_categoryadmin {
+	margin-right: 10px;
+	font-size: 35px;
+	font-weight: bold;
+	text-align: left;
+	color: rgb(41, 128, 185);
+}
+
+#smallCategroy > .detail_smallCategroy {
+	font-size: 15px;
+	font-weight: bold;
+	text-align: left;
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+}

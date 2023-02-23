@@ -1,0 +1,103 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://cdn.jsdelivr.net/font-nanum/1.0/nanumbarungothic/nanumbarungothic.css);
+
+.input1{
+	width:60%;
+	height:30px; 
+	margin-left:50px;
+    border: 3px solid #ccc;
+	}
+#btn_postion{
+position: absolute; 
+right: 200px; 
+bottom: 200px;
+	} 
+.notice_list {width:100%;  border-bottom:3px solid #ccc; margin:15px 0; border-collapse: collapse;}
+.notice_list thead th:first-child {background-image:none;}
+.notice_list thead th {border-bottom:1px solid #ccc; padding:13px 0; color:#3b3a3a; text-align: center; vertical-align:middle;}
+.notice_list tbody td {border-top:1px solid #ccc; padding:13px 0; text-align:center; vertical-align:middle;}
+.notice_list tbody tr:first-child td {border:none;}
+.notice_list tbody tr:hover{background:#ffff99;}
+.notice_list tbody td.title {text-align:left; padding-left:20px;}
+.notice_list tbody td a {display:inline-block}
+/* input:focus {outline:0;} */
+
+.pagination {
+        margin:24px;
+        display: inline-flex;
+        
+    }
+.pagination li {
+    min-width:32px;
+    padding:2px 6px;
+    text-align:center;
+    margin:0 3px;
+    border-radius: 6px;
+    border:1px solid #eee;
+    color:#666;
+}
+.pagination li:hover {
+    background: #E4DBD6;
+}
+.page-item a {
+    color:#666;
+    text-decoration: none;
+}
+.pagination li.active {
+    background-color : #E7AA8D;
+    color:#fff;
+}
+.pagination li.active a {
+    color:#fff;
+}
+
+.card_wrap .label.qstat10, .tbl_lst .label.qstat10{ background-color:#7AB954; } 	/* 검수요청 */
+.card_wrap .label.qstat20, .tbl_lst .label.qstat20 { background-color:#FF9900; } 	/* 수정요청 */
+.card_wrap .label.qstat25, .tbl_lst .label.qstat25 { background-color:#7AB954; } 	/* 재검수요청 */
+.card_wrap .label.qstat30, .tbl_lst .label.qstat30 { background-color:#58B3DE; } 	/* 검수완료 */
+.card_wrap .label.qstat60, .tbl_lst .label.qstat60 { background-color:#DE5858; } 	/* 폐기 */
+.card_wrap .label.qstat90, .tbl_lst .label.qstat90 { background-color:#3b80bb; } 	/* 서비스 */
+.card_wrap .thumbnail { border-top: 2px solid #4F4FAA; padding:0; }
+.card_wrap .thumbnail .caption { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; line-height:30px; padding:6px 15px; }
+.card_wrap .thumbnail .caption:first-child { background-color:#f8f8f8; }
+.card_wrap .thumbimage { max-width:88mm; margin:0 auto; }
+.card_wrap .thumbimage img{ width:100%; -webkit-perspective: 1; }
+.card_wrap .panel .panel-heading { font-size:1.2em; padding: 5px 0; } 
+.card_wrap .panel .table { border:1px solid #ddd; }
+.card_wrap .panel .table tbody th { background-color:#f8f8f8; }
+.card_wrap .nodata { text-align:center; padding:50px 0; font-size:1.2em; }
+.card_wrap .well-xs { padding: 5px; margin-bottom:10px; }
+.card_wrap .well.well-white { background-color:#fff; }
+.card_wrap .well .panel { margin-bottom:5px; }
+
+.qst_wrap {}
+.btn-area .btn-fr {float:right; margin-left:3px;}
+.card{position: relative; display: flex; flex-direction: column; min-width: 0; word-wrap: break-word; background-color: #fff; background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125); border-radius: 0.25rem; margin-bottom: 10px;}
+.card-header{padding: 0.75rem 1.25rem; margin-bottom: 0; background-color: rgba(0, 0, 0, 0.03); border-bottom: 1px solid rgba(0, 0, 0, 0.125);}
+.card-move{height:300px; overflow:scroll;}
+.info-group {overflow: hidden; margin: 0 0 15px; padding: 9px 14px 9px 14px; border: 1px solid #ddd; line-height: 20px; background-color: #f6fbee;}
+
+.name1{  /*문의내역 길면 ...표시  */
+  width        : 200px;     
+  text-overflow: ellipsis; 
+  white-space  : nowrap;   
+  overflow     : hidden;    
+  display      : block;   
+}
+
+tbody > tr {
+    cursor: pointer;
+}
+.board_detail {width:100%; border-top:2px solid #252525; border-bottom:1px solid #ccc; border-collapse:collapse;}
+.board_detail tbody input {width:100%;}
+.board_detail tbody th {text-align:left; background:#f7f7f7; color:#3b3a3a; vertical-align:middle; text-align: center;}
+.board_detail tbody th, .board_detail tbody td {padding:10px 15px; border-bottom:1px solid #ccc;}
+.board_detail tbody textarea {width:100%; min-height:400px}
+
+.btn {color : white;margin:5px; padding:5prgb(0, 255, 255)px; color:#fff !important; display:inline-block; background-color:#1bd2dc; vertical-align:middle; border-radius:0 !important; cursor:pointer; border:none;}
+.btn:hover {background: #6b9ab8;}
+
+.board_title tbody {width:100%; border-bottom:1px solid #ccc; border-collapse:collapse;}
+.board_title tbody input {width:100%;}
+.board_title tbody th, .board_title tbody td {font-size: 30px;padding:10px 15px; border-bottom:1px solid #ccc;}

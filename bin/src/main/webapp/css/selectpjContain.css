@@ -1,0 +1,167 @@
+#pj_container {
+	margin: 50px 100px;
+	padding: 100px 50px 180px 50px;
+	width: auto;
+	height: 600px;
+	letter-spacing: -.2px;
+	background-color: white;
+}
+
+a {
+	text-decoration: none;
+}
+#link_deco > a {
+	color: #777676;
+	
+}
+#link_deco > a:hover {
+	color: black;
+}
+#pj_mainField {
+	margin-left: 400px;
+	padding: 10px;
+	left: 50px;
+	width: 1000px;
+	height: 600px;
+	background-color: white;
+}
+
+#skip_btn {
+	margin: auto;
+	padding: 10px;
+	z-index: 100;
+	position: relative;
+	float: left;
+	left: 1100px;
+	top: 50px;
+	width: 120px;
+	height: auto;
+	border-radius: 20px;
+	background-color: #e2e2e2;
+	text-align: center;
+}
+
+#skip_btn:hover{
+	background-color: #adaaaa;
+}
+
+.skip {
+	color: white;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+#fontDeco > *{
+	font-size: 55px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.fontLocation {
+	margin: 40px auto;
+	padding: 50px 100px;
+	width: 700px;
+	height: 210px;
+	
+}
+
+#selectPJ_btn {
+	margin: 0 30px;
+	padding: 30px;
+	z-index: 100;
+	position: relative;
+	float: left;
+	bottom: 20px;
+	width: 900px;
+	height: auto;
+	text-align: center;
+}
+
+#selectP_btn {
+	margin: 0 140px;
+	padding: 10px;
+	width: 200px;
+	height: 50px;
+	float: left;
+	font-size: 45px;
+	font-weight: bold;
+	border-radius: 40px;
+	background-color: rgba(255, 129, 115, 0.78);
+	text-align: center;
+	cursor: pointer;
+}
+
+#selectP_btn:hover {
+	background-color: rgb(255 76 56 / 78%);
+}
+
+#selectJ_btn{
+	margin: auto;
+	padding: 10px;
+	width: 200px;
+	height: 50px;
+	float: left;
+	font-size: 45px;
+	font-weight: bold;
+	border-radius: 40px;
+	background-color: rgba(115, 183, 255, 0.78);
+	text-align: center;
+	cursor: pointer;
+}
+
+#selectJ_btn:hover {
+	background-color: rgb(46 147 255 / 78%);
+}
+
+.selPJbtn{
+	position: relative;
+	top: 15px;
+	padding-top:10px;
+	color: white;
+	text-align: center;
+}
+
+#selPJ_ex {
+	margin: 0 30px;
+	padding: 10px;
+	z-index: 100;
+	position: relative;
+	float: left;
+	bottom: 20px;
+	width: 900px;
+	height: auto;
+	text-align: center;
+}
+
+#selP_p {
+	margin-left: 40px;
+	margin-right: 70px;
+	padding: 10px;
+	width: 300px;
+	height: 20px;
+	float: left;
+	font-weight: bold;
+	background-color: rgba(253, 195, 189, 0.78);
+	text-align: center;
+}
+
+#selJ_j {
+	margin-left: 120px;
+	margin-right: 20px;
+	padding: 10px;
+	width: 300px;
+	height: 20px;
+	float: left;
+	
+	font-weight: bold;
+	background-color: rgba(192, 222, 255, 0.78);
+	text-align: center;
+}
+
+.selPJex {
+	position: relative;
+	padding-top:10px;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+}
